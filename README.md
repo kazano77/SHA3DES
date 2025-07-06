@@ -368,24 +368,133 @@ SOFTWARE.
 📬 Liên Hệ
 
 
-👥 Nhóm Phát Triển
-📬 Liên Hệ
-👥 Nhóm Phát Triển
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nhóm Phát Triển - Ứng Dụng SHA và Triple DES</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #004080;
+        }
+        .team-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        .team-table th, .team-table td {
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .team-table th {
+            background-color: #004080;
+            color: white;
+        }
+        .team-table td {
+            text-align: left;
+        }
+        .team-table a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+        .team-table a:hover {
+            text-decoration: underline;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .star-section {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        .star-section a {
+            color: #ff9900;
+            text-decoration: none;
+        }
+        .star-section a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔒 Ứng Dụng SHA và Triple DES</h1>
+        
+        <h2>👥 Nhóm Phát Triển</h2>
+        <table class="team-table">
+            <tr>
+                <th>Vai Trò</th>
+                <th>Họ và Tên</th>
+                <th>Email</th>
+                <th>GitHub</th>
+            </tr>
+            <tr>
+                <td>Project Lead</td>
+                <td>Nguyễn Phương Nam</td>
+                <td><a href="mailto:namnnamnamaa8@gmail.com">namnnamnamaa8@gmail.com</a></td>
+                <td><a href="https://github.com/nguyenphuongnam" target="_blank">@nguyenphuongnam</a></td>
+            </tr>
+            <tr>
+                <td>Backend Dev</td>
+                <td>Phạm Ngọc Minh</td>
+                <td>(chưa cung cấp)</td>
+                <td>(chưa cung cấp)</td>
+            </tr>
+            <tr>
+                <td>Frontend Dev</td>
+                <td>Nguyễn Văn Nam</td>
+                <td>(chưa cung cấp)</td>
+                <td>(chưa cung cấp)</td>
+            </tr>
+            <tr>
+                <td>Report</td>
+                <td>Đào Hải Phong</td>
+                <td>(chưa cung cấp)</td>
+                <td>(chưa cung cấp)</td>
+            </tr>
+        </table>
 
-Vai Trò	Họ và Tên	Email	GitHub
-Project Lead	Nguyễn Phương Nam	namnnamnamaa8@gmail.com	@nguyenphuongnam
-Backend Dev	Phạm Ngọc Minh	(chưa cung cấp)	(chưa cung cấp)
-Frontend Dev	Nguyễn Văn Nam	(chưa cung cấp)	(chưa cung cấp)
-Report	Đào Hải Phong	(chưa cung cấp)	(chưa cung cấp)
-🏫 Liên Hệ Khoa
-Email
-Website
-GitHub
-Khoa Công Nghệ Thông Tin - Đại Học Đại Nam, Hà Nội, Việt Nam
+        <div class="contact-info">
+            <h3>🏫 Liên Hệ Khoa</h3>
+            <p>
+                <a href="mailto:contact@fit.dainam.edu.vn">Email</a> |
+                <a href="https://fit.dainam.edu.vn" target="_blank">Website</a> |
+                <a href="https://github.com/khoa-cntt-dainam" target="_blank">GitHub</a>
+            </p>
+            <p>Khoa Công Nghệ Thông Tin - Đại Học Đại Nam, Hà Nội, Việt Nam</p>
+        </div>
 
-⭐ Nếu project này hữu ích, hãy star để ủng hộ nhóm phát triển!
+        <div class="star-section">
+            <p>⭐ Nếu project này hữu ích, hãy <a href="https://github.com/your-username/your-repo" target="_blank">star</a> để ủng hộ nhóm phát triển!</p>
+        </div>
+    </div>
+</body>
+</html>
 
-```markdown ```
 
 
 ```
