@@ -1,12 +1,12 @@
 # 🔒 Ứng Dụng SHA và Triple DES Để Bảo Vệ Mật Khẩu Người Dùng Trong Cơ Sở Dữ Liệu
 
 <div align="center">
-  <img src="static/img/logo.png" alt="Logo Đại học Đại Nam" width="200"/>
-  <img src="static/img/Logo_DNU.png" alt="Logo Khoa Công nghệ Thông tin" width="170"/>
+  <img src="./static/image/logo.png" alt="Logo Đại học Đại Nam" width="200"/>
+  <img src="./static/image/Logo_DNU.png" alt="Logo Khoa Công nghệ Thông tin" width="170"/>
 </div>
 
 <div align="center">
-  <img src="static/img/Banner.jpeg" alt="Banner Ứng Dụng" />
+  <img src="./static/image/Banner.jpeg" alt="Banner Ứng Dụng" />
 </div>
 
 <div align="center">
@@ -46,7 +46,7 @@
 ## 🏗️ Kiến Trúc Hệ Thống
 
 <div align="center">
-  <img src="static/img/system.png" alt="Sơ đồ Kiến trúc" width="800"/>
+  <img src="./static/image/system.png" alt="Sơ đồ Kiến trúc" width="800"/>
 </div>
 
 Hệ thống được thiết kế theo mô hình **Clean Architecture**, sử dụng **NestJS + GraphQL** cho backend, **Next.js + Apollo Client** cho frontend, và **MongoDB** làm cơ sở dữ liệu, đảm bảo **bí mật**, **toàn vẹn**, và **sẵn sàng** của dữ liệu người dùng.
@@ -112,7 +112,7 @@ Hệ thống được thiết kế theo mô hình **Clean Architecture**, sử d
 ### 📱 Giao Diện Thân Thiện
 
 <div align="center">
-  <img src="static/img/interface.png" alt="Giao diện Hệ Thống" />
+  <img src="./static/image/interface.png" alt="Giao diện Hệ Thống" />
 </div>
 
 - **💻 Giao Diện Người Dùng**: Đăng ký, đăng nhập, đổi mật khẩu dễ sử dụng.
@@ -169,7 +169,7 @@ secure_auth/
 │   │   ├── apollo/            # Cấu hình Apollo Client
 │   │   ├── utils/             # Hàm tiện ích (auth, token)
 │   │   └── styles/globals.css # CSS toàn cục (Tailwind)
-├── static/
+├── ./static/
 │   ├── img/
 │   │   ├── banner.png        # Banner ứng dụng
 │   │   ├── logo-dainam.png   # Logo Đại học Đại Nam
