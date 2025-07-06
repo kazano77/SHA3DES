@@ -369,42 +369,23 @@ SOFTWARE.
 
 
 👥 Nhóm Phát Triển
+📬 Liên Hệ
+👥 Nhóm Phát Triển
 
-
-
-Vai Trò
-Họ và Tên
-Email
-GitHub
-
-
-
-Project Lead
-Nguyễn Phương Nam
-namnnamnamaa8@gmail.com
-@nguyenphuongnam
-
-Backend Dev
-Nguyễn Phương Nam
-namnnamnamaa8@gmail.com
-@nguyenphuongnam
-
-Frontend Dev
-Nguyễn Phương Nam
-namnnamnamaa8@gmail.com
-@nguyenphuongnam
-
-Report
-Nguyễn Phương Nam
-namnnamnamaa8@gmail.com
-@nguyenphuongnam
-
-
+Vai Trò	Họ và Tên	Email	GitHub
+Project Lead	Nguyễn Phương Nam	namnnamnamaa8@gmail.com	@nguyenphuongnam
+Backend Dev	Phạm Ngọc Minh	(chưa cung cấp)	(chưa cung cấp)
+Frontend Dev	Nguyễn Văn Nam	(chưa cung cấp)	(chưa cung cấp)
+Report	Đào Hải Phong	(chưa cung cấp)	(chưa cung cấp)
 🏫 Liên Hệ Khoa
-
-Khoa Công Nghệ Thông TinĐại Học Đại Nam📍 Hà Nội, Việt Nam
+Email
+Website
+GitHub
+Khoa Công Nghệ Thông Tin - Đại Học Đại Nam, Hà Nội, Việt Nam
 
 ⭐ Nếu project này hữu ích, hãy star để ủng hộ nhóm phát triển!
+
+```markdown ```
 
 
 ```
