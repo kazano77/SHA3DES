@@ -365,7 +365,21 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 
+Dựa trên yêu cầu của bạn, tôi sẽ cập nhật phần Nhóm Phát Triển trong file README.md bằng cách bỏ các cột Email và GitHub, giữ lại chỉ Vai Trò và Họ và Tên. Thời gian hiện tại là 12:01 AM +07, Thứ Hai, ngày 07/07/2025. Dưới đây là nội dung đã chỉnh sửa:
+
 📬 Liên Hệ
+👥 Nhóm Phát Triển
+
+Vai Trò	         Họ và Tên
+Project Lead	Nguyễn Phương Nam
+Frontend Dev    Phạm Ngọc Minh
+Report	     	 Nguyễn Văn Nam
+Report	       Đào Hải Phong
+
+                     🏫 Liên Hệ Khoa
+Khoa Công Nghệ Thông Tin - Đại Học Đại Nam, Hà Nội, Việt Nam
+
+⭐ Nếu project này hữu ích, hãy star để ủng hộ nhóm phát triển!
 
 
 
