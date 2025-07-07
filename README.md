@@ -150,37 +150,106 @@ Hệ thống được thiết kế theo mô hình **Clean Architecture**, sử d
 ## 📂 Cấu Trúc Thư Mục
 
 ```plaintext
-secure_auth/
-├── .venv/                      # Môi trường ảo (Virtual Environment)
-├── backend/                   # Source code backend
-│   ├── src/
-│   │   ├── database/          # Cấu hình kết nối MongoDB
-│   │   ├── security/          # Mã hóa SHA-256, Triple DES, Salt
-│   │   ├── resolvers/         # GraphQL resolvers (user, admin)
-│   │   ├── guards/            # Role guard, auth guard
-│   │   ├── entities/          # User entity, value objects
-│   │   ├── use-cases/         # Logic nghiệp vụ (register, login, etc.)
-│   │   ├── main.ts            # Khởi chạy NestJS
-│   │   └── schema.gql         # Lược đồ GraphQL
-├── frontend/                  # Source code frontend
-│   ├── src/
-│   │   ├── pages/             # Route: login, register, admin
-│   │   ├── components/        # Thành phần giao diện tái sử dụng
-│   │   ├── apollo/            # Cấu hình Apollo Client
-│   │   ├── utils/             # Hàm tiện ích (auth, token)
-│   │   └── styles/globals.css # CSS toàn cục (Tailwind)
-├── ./static/
-│   ├── img/
-│   │   ├── banner.png        # Banner ứng dụng
-│   │   ├── logo-dainam.png   # Logo Đại học Đại Nam
-│   │   ├── logo-khoa-cntt.png # Logo Khoa CNTT
-│   │   ├── architecture-diagram.png # Sơ đồ kiến trúc
-│   │   ├── interface.png      # Giao diện hệ thống
-│   │   └── demo.gif          # Demo ứng dụng
-├── docker-compose.yml         # Cấu hình Docker
-├── package.json              # Dependencies frontend/backend
-├── tsconfig.json             # Cấu hình TypeScript
-└── README.md                 # Tài liệu hướng dẫn
+ backend
+
+│   ├── src
+│   │   ├── application
+│   │   │   ├── services
+│   │   │   │   └── admin.service.ts
+│   │   │   └── use-cases
+│   │   │       ├── admin-unlock-user.ts
+│   │   │       ├── admin-unlock-user.usecase.ts
+│   │   │       ├── change-admin-password.usecase.ts
+│   │   │       ├── change-password.usecase.ts
+│   │   │       ├── login-admin.usecase.ts
+│   │   │       ├── login-user.usecase.ts
+│   │   │       ├── register-admin.usecase.ts
+│   │   │       └── register-user.usecase.ts
+│   │   ├── app.module.ts
+│   │   ├── domain
+│   │   │   ├── entities
+│   │   │   │   └── user.entity.ts
+│   │   │   ├── interfaces
+│   │   │   │   ├── admin.repository.ts
+│   │   │   │   ├── logger.repository.ts
+│   │   │   │   └── user.repository.ts
+│   │   │   └── value-objects
+│   │   │       ├── password.vo.ts
+│   │   │       ├── salt.vo.ts
+│   │   │       └── username.vo.ts
+│   │   ├── infrastructure
+│   │   │   ├── database
+│   │   │   │   ├── admin.repository.impl.ts
+│   │   │   │   ├── models
+│   │   │   │   │   ├── admin.model.ts
+│   │   │   │   │   └── user.model.ts
+│   │   │   │   ├── schemas
+│   │   │   │   │   └── login-log.schema.ts
+│   │   │   │   └── user.repository.impl.ts
+│   │   │   ├── logger
+│   │   │   │   └── logger.service.ts
+│   │   │   └── security
+│   │   │       ├── encryption.service.ts
+│   │   │       └── salt.generator.ts
+│   │   ├── interfaces
+│   │   │   ├── graphql
+│   │   │   │   ├── dto
+│   │   │   │   ├── guards
+│   │   │   │   │   └── admin.guard.ts
+│   │   │   │   └── resolvers
+│   │   │   │       ├── admin-auth.resolver.ts
+│   │   │   │       ├── admin.resolver.ts
+│   │   │   │       └── user.resolver.ts
+│   │   │   └── guards
+│   │   │       ├── admin.guards.ts
+│   │   │       └── roles.guard.ts
+│   │   ├── main.ts
+│   │   └── schema.gql
+│   └── tsconfig.json
+├── frontend
+│   ├── next-env.d.ts
+│   ├── node_modules
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── postcss.config.js
+│   ├── public
+│   ├── src
+│   │   ├── apollo
+│   │   │   └── client.ts
+│   │   ├── components
+│   │   │   ├── admin
+│   │   │   │   └── UserTable.tsx
+│   │   │   ├── Layout.tsx
+│   │   │   └── user
+│   │   │       ├── AuthActions.tsx
+│   │   │       ├── FormInput.tsx
+│   │   │       └── Toast.tsx
+│   │   ├── pages
+│   │   │   ├── admin
+│   │   │   │   ├── dashboard.tsx
+│   │   │   │   ├── login.tsx
+│   │   │   │   ├── logs.tsx
+│   │   │   │   └── user-list.tsx
+│   │   │   ├── _app.tsx
+│   │   │   ├── change-password.tsx
+│   │   │   ├── index.tsx
+│   │   │   ├── login.tsx
+│   │   │   └── register.tsx
+│   │   └── utils
+│   │       ├── auth.ts
+│   │       └── withAdminGuard.tsx
+│   ├── styles
+│   │   └── globals.css
+│   ├── tailwind.config.js
+│   └── tsconfig.json
+├── README.md
+└── static
+    └── image
+        ├── Banner.jpeg
+        ├── interface.png
+        ├── Logo_DNU.png
+        ├── logo.png
+        └── system.png
 
 
 📥 Cài Đặt
